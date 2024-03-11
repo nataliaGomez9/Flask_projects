@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block title %} Home Page{%endblock%}
+
+{%block content%}
+<h1>Madlibs</h1>
+<form action="/questions">
+    <select name="story_id">
+        {%for story in stories%}
+            <option values="{{story.code}}">
+                {{story.code}}
+            </option>
+        {%endfor%}    
+    </select>
+    <button>Continue</button>
+</form>
+{%endblock%}
+

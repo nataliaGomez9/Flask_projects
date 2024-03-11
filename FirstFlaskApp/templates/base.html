@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/app.css">
+    <title>{%block title%} {%endblock%}</title>
+</head>
+<body>
+    <nav class= "Navbar">
+        <a href="/">home</a>
+        <a href="/form">Greet-1</a>
+        <a href="/form-2">Greet-2</a>
+        <a href="/lucky">Lucky</a>
+        <a href="/hello">hello</a>
+    </nav>
+    <main id= "content">
+        {%block content%} {%endblock%}
+    </main>
+    
+    <footer>Pretend footer</footer>
+  
+<script src="/static/app.js"></script>
+</body>
+
+</html>

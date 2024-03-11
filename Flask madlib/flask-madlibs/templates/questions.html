@@ -1,0 +1,15 @@
+{%extends 'base.html'%} 
+
+{%block title%} Questions {%endblock%}
+
+{%block content%}
+    <!-- generates and shows form that asks for words -->
+    <form action="/story">  
+        {%for prompt in prompts%}
+        <label>{{prompt}}</label>
+        <input type="text" name="{{prompt}}">
+        {%endfor%}
+        <input type="hidden" name="story_id" value="{{story_id}}">
+        <button>Submit</button>
+    </form>
+    {%endblock%}

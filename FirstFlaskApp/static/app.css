@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#content{
+    margin:40px;
+
+}
+.Navbar{
+    background-color: black;
+    overflow: hidden;
+}
+.Navbar a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.Navbar a:hover{
+    background-color: #ddd;
+    color:black;
+}

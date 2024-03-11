@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%block title%} Lucky Number {%endblock%}
+<!-- must have the same block name as base file so that the content is place correctly -->
+{%block content%}
+    <h1> Your lucky number is: {{lucky_num}}</h1>
+    <p>{{msg}}</p>
+
+    {% if lucky_num == 3 %}
+    <h1>That's an awesome number</h1>
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDB3aGwwdnBtNWJ6aTJ6ejhkbDl5NTdpZDdyejRicHY1aDVrcHlobyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l396FvhXOqm20Pogo/giphy.gif">
+    {% else %}
+    <h1>Another option</h1>
+    {% endif%}
+    <img>
+
+{%endblock%}

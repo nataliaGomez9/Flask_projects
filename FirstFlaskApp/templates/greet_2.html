@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{%block title%} Second Greet {%endblock%}
+<!-- must have the same block name as base file so that the content is place correctly -->
+{%block content%}
+    
+    <h1>Greetings! {{username}}</h1>
+    <!-- adding compliments if a user wants them -->
+    {% if wants_compliments%}
+    <h2>Here are three compliments</h2>
+    <ul>
+    {% for compliment in compliments%}
+    <li>{{compliment}}</li>
+    {% endfor%}
+    </ul>
+    {%endif%}
+{%endblock%}

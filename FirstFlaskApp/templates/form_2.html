@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+{%block title%} Second Greet Form V2 {%endblock%}
+<!-- must have the same block name as base file so that the content is place correctly -->
+{%block content%}
+    <h1>Second Greet</h1>
+    <form action="/greet-2">
+        <input placeholder="You're name" type="text" name="username">
+        <!-- associates the label with the input by using for="" -->
+        <label for="compliments">Do you want compliments?</label>
+        <input id="compliments" type="checkbox" name="yes_compliments">
+        <button>Submit</button>
+    </form>
+{%endblock%}
